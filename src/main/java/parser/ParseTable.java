@@ -46,18 +46,19 @@ public class ParseTable {
             gotoTable.add(new HashMap<>());
             for (int j = 1; j < cols.length; j++) {
                 if (!cols[j].equals("")) {
+                    int sizeMinusOne = actionTable.size() - 1;
                     if (cols[j].equals("acc")) {
-                        actionTable.get(actionTable.size() - 1).put(terminals.get(j), new Action(act.accept, 0));
+                        actionTable.get(sizeMinusOne).put(terminals.get(j), new Action(act.accept, 0));
                     } else if (terminals.containsKey(j)) {
 //                        try {
                         Token t = terminals.get(j);
                         Action a = new Action(cols[j].charAt(0) == 'r' ? act.reduce : act.shift, Integer.parseInt(cols[j].substring(1)));
-                        actionTable.get(actionTable.size() - 1).put(t, a);
+                        actionTable.get(sizeMinusOne).put(t, a);
 //                        }catch (StringIndexOutOfBoundsException e){
 //                            e.printStackTrace();
 //                        }
                     } else if (nonTerminals.containsKey(j)) {
-                        gotoTable.get(gotoTable.size() - 1).put(nonTerminals.get(j), Integer.parseInt(cols[j]));
+                        gotoTable.get(sizeMinusOne).put(nonTerminals.get(j), Integer.parseInt(cols[j]));
                     } else {
                         throw new Exception();
                     }
