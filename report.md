@@ -13,8 +13,7 @@
 <img width="1314" alt="Screenshot 1402-02-29 at 6 12 05 PM" src="https://github.com/arplusman/refactoring-lab/assets/45389988/b4a2de6b-8231-4842-851a-6eeb294e37b4">
 
 
-## Polymorphism
-ا
+## استفاده از Polymorphism
 
 استفاده از switch در کد زیر باعث بوی بد کد می‌شود و maintanance را پایین می‌آورد. به جای اینکه از یک enum به عنوان TypeAddress اسقفاده کنیم، بهتر است که یک کلاس ‍‍`TypeAddress` داشته‌باشیم که کلاس‌های متناظر از آن ارث‌بری می‌کنند.
 
@@ -34,4 +33,10 @@
 <img width="1328" alt="Screenshot 1402-02-29 at 6 18 20 PM" src="https://github.com/arplusman/refactoring-lab/assets/45389988/3f779695-d590-4178-8b71-a5c5031fda5d">
 
 <img width="1323" alt="Screenshot 1402-02-29 at 6 18 39 PM" src="https://github.com/arplusman/refactoring-lab/assets/45389988/d54a3984-1330-4a13-bf59-f7bba52e6742">
+
+## تکنیک Method Extraction
+
+در اینجا بخشی از کد را که دوبار تکرار شده‌است (duplicate code) را به صورت یک متد جداگانه تعریف کرده و به جای نوشتن دوباره‌ی کد، این متد را قراخوانی می‌کنیم:
+
+<img width="1623" alt="Screenshot 1402-02-29 at 6 22 59 PM" src="https://github.com/arplusman/refactoring-lab/assets/45389988/3900d5b5-657b-4d29-8af5-7308fb786fa4">
 
