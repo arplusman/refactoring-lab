@@ -48,6 +48,11 @@
 <img width="1651" alt="Screenshot 1402-02-29 at 6 24 05 PM" src="https://github.com/arplusman/refactoring-lab/assets/45389988/619ad27f-843f-4d98-8b09-26ef48baeb79">
 
 
+## تکنیک Inlne Temp
+
+در این جا به جای به استفاده از یک متغیر موقتی که تنها یک بار از آن استفاده شده، به طور مستقیم از آن مقدار در کد خود استفاده می‌کنیم:
+
+<img width="1642" alt="Screenshot 1402-02-29 at 6 25 47 PM" src="https://github.com/arplusman/refactoring-lab/assets/45389988/08340088-b74f-4718-9d9f-04c78a5e53aa">
 
 
 
