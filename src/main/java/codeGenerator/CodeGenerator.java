@@ -447,9 +447,8 @@ public class CodeGenerator {
 
         String methodName = symbolStack.pop();
         Address s = ss.pop();
-        SymbolType t = symbolTable.getMethodReturnType(symbolStack.peek(), methodName);
         varType temp = varType.Int;
-        switch (t) {
+        switch (symbolTable.getMethodReturnType(symbolStack.peek(), methodName)) {
             case Int:
                 break;
             case Bool:
