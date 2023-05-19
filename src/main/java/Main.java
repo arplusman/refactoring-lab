@@ -3,13 +3,14 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import parser.Parser;
+import parser.ParserFacade;
 
 public class Main {
     public static void main(String[] args) {
-        Parser parser = new Parser();
         try {
             // start parsing
-            parser.startParse(new Scanner(new File("src/main/resources/code")));
+            String address = "src/main/resources/code";
+            ParserFacade.parse(address);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
