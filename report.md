@@ -40,3 +40,14 @@
 
 <img width="1623" alt="Screenshot 1402-02-29 at 6 22 59 PM" src="https://github.com/arplusman/refactoring-lab/assets/45389988/3900d5b5-657b-4d29-8af5-7308fb786fa4">
 
+
+## تکنیک Replace temp with Query
+
+در این جا به جای اینکه هر بار یک عملیات محاسبه را بنویسیم، یک متغیر موقتی تعریف می‌کنیم و این مقدار محاسبه‌شده را در آن می‌ریزیم تا از تکرار کد جلوگیری کنیم:
+
+<img width="1651" alt="Screenshot 1402-02-29 at 6 24 05 PM" src="https://github.com/arplusman/refactoring-lab/assets/45389988/619ad27f-843f-4d98-8b09-26ef48baeb79">
+
+
+
+
+
